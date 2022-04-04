@@ -21,3 +21,6 @@ a {
     display: block;
     clear: both;
 }
+body{
+    width: 2000px;
+}

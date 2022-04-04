@@ -32,6 +32,11 @@ header{
     float: left;
     margin-right: 15px;
     font-size: 12px;
+    cursor: pointer;
+}
+.loginList li:hover{
+    color: #333;
+    font-weight: 700;
 }
 .loginList li::after{
     margin-left: 15px;
@@ -51,25 +56,38 @@ header{
 }
 .mainGnbList{
     width: 1200px;
+    margin: 0 auto;    
+}
+.mainmenu{
+    font-size: 20px;
+    display: block;
     margin: 0 auto;
-    
+    color: #333;
+    width: 45%;
+    padding: 5px 0;
+    border-radius: 17px;
+    cursor: pointer;
+}
+.mainmenu:hover{
+    background-color: #ddd;
+    transition: .4s;
+    color: brown;
+    font-weight: 700;
 }
 .mainGnbList>li{
     float: left;
     width: 20%;
     text-align: center;
 }
-.mainGntList>li>a{
-}
-.subGnbList{
-    display: none;
+.mainGnbList>li>a{
+    cursor: default;
 }
 /* header 끝 */
 
 /* slider 시작 */
 
 .slider_inner{
-    height: 350px;
+    height: 400px;
     width: 100%;
     overflow: hidden;
     position: relative;
@@ -78,20 +96,41 @@ header{
 .sliderList{
     position: absolute;
     width: 8000px;
-    height: 100%;
+    height: 500px;
 }
 .sliderList li{
     float: left;
+    width: 2000px;
+    height: 400px;
+    overflow: hidden;
 }
 .sliderList li a{}
 .slider_img_div{
     width: 100%;
     height: 100%;
+    background-image: url("https://via.placeholder.com/2000x400");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
-.slider_img_div img{
-    width: 100%;
+.slider_btn{
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    font-size: 50px;
+    opacity: 10%;
+    transform: translateY(-50%);
+    cursor: pointer;
 }
-
+.slider_btn_left{
+    left: 30px;
+}
+.slider_btn_right{
+    right: 30px;
+}
+.slider_btn:hover{
+    transition: .3s;
+    opacity: 40%;
+}
 
 
 /* slider 끝 */
@@ -99,4 +138,130 @@ header{
 #wrap{
     width: 1200px;
     margin: 0 auto;
+}
+
+/* index content 시작 */
+.main{
+    width: 1200px;
+}
+
+.index_main_content_div{
+    margin-top: 20px;
+}
+
+.index_subTit_div{
+    position: relative;
+    margin-top: 70px;
+}
+.index_subTit{
+    font-size: 30px;
+    color: #333;
+    text-align: center;
+}
+.index_moreBtn{
+    font-size: 12px;
+    color: #ddd;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    cursor: pointer;
+}
+.index_moreBtn:hover{
+    color: #333;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.index_content_goodsList_div{
+    position: relative;
+    overflow: hidden;
+    width: 1200px;
+    height: 500px;
+    padding: 20px 30px;
+    margin-top: 30px;
+}
+.index_content_goodsList{
+    width: 2500px;
+    height: 400px;
+    position: absolute;
+    overflow: hidden;
+}
+.index_content_goodsList li{
+    float: left;
+    margin-left: 45px;
+}
+.index_content_goodsList li:first-child{
+    margin-left: 0;
+}
+.index_content_goodsList li a{}
+.index_goods_img_div{
+    width: 250px;
+    height: 300px;
+    overflow: hidden;
+}
+.index_goods_img_div img{}
+.index_goods_img_div img:hover{
+    transition: .2s;
+    transform: scale(1.1);
+}
+
+.index_goods_exp_div{
+    width: 250px;
+    padding-top: 10px;
+}
+.index_goods_exp{
+    display: inline-block;
+}
+.exp_name{
+    font-size: 22px;
+    font-weight: 700;
+    color: #333;
+}
+.exp_price{
+    float: right;
+    margin-top: 22px;
+    font-size: 20px;
+    color: #333;
+}
+.exp_exp{
+    font-weight: 500;
+    font-size: 14px;
+    color: #555;
+}
+.won{
+    font-size: 12px;
+}
+
+/* index content 끝 */
+
+footer{
+    width: 100%;
+    margin: 50px 0;
+    box-shadow: 0px -2px 0 0px #ddd;
+}
+.footer_inner{
+    width: 1200px;
+    padding-top: 50px;
+    margin: 0 auto;
+    position: relative;
+    color: #555;
+}
+.footer_nav{
+    display: block;
+    padding: 20px 50px;
+    width: 50%;
+    height: 100px;
+    position: absolute;
+}
+.footer_nav_list{
+    font-size: 18px;
+}
+.footer_copyright{
+    display: block;
+    width: 50%;
+    position: absolute;
+    left: 50%;
+}
+.footer_copyright li{
+    margin-top: 10px;
 }

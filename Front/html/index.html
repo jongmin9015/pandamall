@@ -4,99 +4,56 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/3926510854.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/style.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <title>panda</title>
+    <script>
+        $(document).ready(function(){
+            $("#header").load("include/header.html");
+            $("#footer").load("include/footer.html");
+        });
+    </script>
 </head>
 <body>
-    <header>
-        <div class="logo_inner">
-            <div class="logo_div">
-                <!-- <img src="../images/" alt="logo"> -->
-            </div>
-        </div>
-        <div class="login_inner">
-            <div class="login_div">
-                <ul class="loginList clear">
-                    <li>로그인</li>
-                    <li>회원가입</li>
-                    <li>고객센터</li>
-                </ul>
-            </div>
-        </div>            
-        <div class="gnb_inner">
-            <ul class="mainGnbList clear">
-                <li>
-                    <a href="#">대메뉴1</a>
-                    <ul class="subGnbList">
-                        <li><a href="#">서브메뉴1</a></li>
-                        <li><a href="#">서브메뉴2</a></li>
-                        <li><a href="#">서브메뉴3</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">대메뉴2</a>
-                    <ul class="subGnbList">
-                        <li><a href="#">서브메뉴1</a></li>
-                        <li><a href="#">서브메뉴2</a></li>
-                        <li><a href="#">서브메뉴3</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">대메뉴3</a>
-                    <ul class="subGnbList">
-                        <li><a href="#">서브메뉴1</a></li>
-                        <li><a href="#">서브메뉴2</a></li>
-                        <li><a href="#">서브메뉴3</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">대메뉴4</a>
-                    <ul class="subGnbList">
-                        <li><a href="#">서브메뉴1</a></li>
-                        <li><a href="#">서브메뉴2</a></li>
-                        <li><a href="#">서브메뉴3</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">대메뉴5</a>
-                    <ul class="subGnbList">
-                        <li><a href="#">서브메뉴1</a></li>
-                        <li><a href="#">서브메뉴2</a></li>
-                        <li><a href="#">서브메뉴3</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </div>            
-    </header>
+    <div id="header"></div>
     <div class="slider_inner">
+        <span class="slider_btn slider_btn_left"><i class="fa-solid fa-circle-chevron-left"></i></span>
+        <span class="slider_btn slider_btn_right"><i class="fa-solid fa-circle-chevron-right"></i></span>
         <ul class="sliderList clear">
             <li>
                 <a href="#">
-                    <div class="slider_img_div"><img src="https://via.placeholder.com/1600x400" alt="slider"></div>
+                    <div class="slider_img_div"></div>
                 </a>
+                <!-- <img src="https://via.placeholder.com/1600x400" alt="slider"> -->
             </li>
             <li>
                 <a href="#">
-                    <div class="slider_img_div"><img src="https://via.placeholder.com/1600x400" alt="slider"></div>
+                    <div class="slider_img_div"></div>
                 </a>
+                <!-- <img src="https://via.placeholder.com/1600x400" alt="slider"> -->
             </li>
             <li>
                 <a href="#">
-                    <div class="slider_img_div"><img src="https://via.placeholder.com/1600x400" alt="slider"></div>
+                    <div class="slider_img_div"></div>
                 </a>
+                <!-- <img src="https://via.placeholder.com/1600x400" alt="slider"> -->
             </li>
             <li>
                 <a href="#">
-                    <div class="slider_img_div"><img src="https://via.placeholder.com/1600x400" alt="slider"></div>
+                    <div class="slider_img_div"></div>
                 </a>
+                <!-- <img src="https://via.placeholder.com/1600x400" alt="slider"> -->
             </li>
             <li>
                 <a href="#">
-                    <div class="slider_img_div"><img src="https://via.placeholder.com/1600x400" alt="slider"></div>
+                    <div class="slider_img_div"></div>
                 </a>
+                <!-- <img src="https://via.placeholder.com/1600x400" alt="slider"> -->
             </li>
         </ul>
+        
     </div>
     <div id="wrap">
         
@@ -108,31 +65,66 @@
                     <span class="index_moreBtn">더보기</span>
                 </div>
                 <div class="index_content_goodsList_div">
-                    <ul class="index_content_goodsList">
+                    <ul class="index_content_goodsList clear">
                         <li>
                             <a href="#">
-                                <div class="index_goods_img_div"><img src="../images/" alt="Goods"></div>
+                                <div class="index_goods_img_div"><img src="https://via.placeholder.com/250x300" alt="Goods"></div>
                             </a>
+                            <div class="index_goods_exp_div">
+                                <p class="clear">                                    
+                                    <span class="index_goods_exp exp_name">[상품]상품명</span>
+                                    <span class="index_goods_exp exp_price">50,000<span class="won">원</span></span>
+                                    <span class="index_goods_exp exp_exp"> 상품 설명 간략한 설명 설명란</span>
+                                </p>
+                            </div>
                         </li>
                         <li>
                             <a href="#">
-                                <div class="index_goods_img_div"><img src="../images/" alt="Goods"></div>
+                                <div class="index_goods_img_div"><img src="https://via.placeholder.com/250x300" alt="Goods"></div>
                             </a>
+                            <div class="index_goods_exp_div">
+                                <p class="clear">                                    
+                                    <span class="index_goods_exp exp_name">[상품]상품명</span>
+                                    <span class="index_goods_exp exp_price">50,000<span class="won">원</span></span>
+                                    <span class="index_goods_exp exp_exp"> 상품 설명 간략한 설명 설명란</span>
+                                </p>
+                            </div>
                         </li>
                         <li>
                             <a href="#">
-                                <div class="index_goods_img_div"><img src="../images/" alt="Goods"></div>
+                                <div class="index_goods_img_div"><img src="https://via.placeholder.com/250x300" alt="Goods"></div>
                             </a>
+                            <div class="index_goods_exp_div">
+                                <p class="clear">                                    
+                                    <span class="index_goods_exp exp_name">[상품]상품명</span>
+                                    <span class="index_goods_exp exp_price">50,000<span class="won">원</span></span>
+                                    <span class="index_goods_exp exp_exp"> 상품 설명 간략한 설명 설명란</span>
+                                </p>
+                            </div>
                         </li>
                         <li>
                             <a href="#">
-                                <div class="index_goods_img_div"><img src="../images/" alt="Goods"></div>
+                                <div class="index_goods_img_div"><img src="https://via.placeholder.com/250x300" alt="Goods"></div>
                             </a>
+                            <div class="index_goods_exp_div">
+                                <p class="clear">                                    
+                                    <span class="index_goods_exp exp_name">[상품]상품명</span>
+                                    <span class="index_goods_exp exp_price">50,000<span class="won">원</span></span>
+                                    <span class="index_goods_exp exp_exp"> 상품 설명 간략한 설명 설명란</span>
+                                </p>
+                            </div>
                         </li>
                         <li>
                             <a href="#">
-                                <div class="index_goods_img_div"><img src="../images/" alt="Goods"></div>
+                                <div class="index_goods_img_div"><img src="https://via.placeholder.com/250x300" alt="Goods"></div>
                             </a>
+                            <div class="index_goods_exp_div">
+                                <p class="clear">                                    
+                                    <span class="index_goods_exp exp_name">[상품]상품명</span>
+                                    <span class="index_goods_exp exp_price">50,000<span class="won">원</span></span>
+                                    <span class="index_goods_exp exp_exp"> 상품 설명 간략한 설명 설명란</span>
+                                </p>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -143,31 +135,66 @@
                     <span class="index_moreBtn">더보기</span>
                 </div>
                 <div class="index_content_goodsList_div">
-                    <ul class="index_content_goodsList">
+                    <ul class="index_content_goodsList  clear">
                         <li>
                             <a href="#">
-                                <div class="index_goods_img_div"><img src="../images/" alt="Goods"></div>
+                                <div class="index_goods_img_div"><img src="https://via.placeholder.com/250x300" alt="Goods"></div>
                             </a>
+                            <div class="index_goods_exp_div">
+                                <p class="clear">                                    
+                                    <span class="index_goods_exp exp_name">[상품]상품명</span>
+                                    <span class="index_goods_exp exp_price">50,000<span class="won">원</span></span>
+                                    <span class="index_goods_exp exp_exp"> 상품 설명 간략한 설명 설명란</span>
+                                </p>
+                            </div>
                         </li>
                         <li>
                             <a href="#">
-                                <div class="index_goods_img_div"><img src="../images/" alt="Goods"></div>
+                                <div class="index_goods_img_div"><img src="https://via.placeholder.com/250x300" alt="Goods"></div>
                             </a>
+                            <div class="index_goods_exp_div">
+                                <p class="clear">                                    
+                                    <span class="index_goods_exp exp_name">[상품]상품명</span>
+                                    <span class="index_goods_exp exp_price">50,000<span class="won">원</span></span>
+                                    <span class="index_goods_exp exp_exp"> 상품 설명 간략한 설명 설명란</span>
+                                </p>
+                            </div>
                         </li>
                         <li>
                             <a href="#">
-                                <div class="index_goods_img_div"><img src="../images/" alt="Goods"></div>
+                                <div class="index_goods_img_div"><img src="https://via.placeholder.com/250x300" alt="Goods"></div>
                             </a>
+                            <div class="index_goods_exp_div">
+                                <p class="clear">                                    
+                                    <span class="index_goods_exp exp_name">[상품]상품명</span>
+                                    <span class="index_goods_exp exp_price">50,000<span class="won">원</span></span>
+                                    <span class="index_goods_exp exp_exp"> 상품 설명 간략한 설명 설명란</span>
+                                </p>
+                            </div>
                         </li>
                         <li>
                             <a href="#">
-                                <div class="index_goods_img_div"><img src="../images/" alt="Goods"></div>
+                                <div class="index_goods_img_div"><img src="https://via.placeholder.com/250x300" alt="Goods"></div>
                             </a>
+                            <div class="index_goods_exp_div">
+                                <p class="clear">                                    
+                                    <span class="index_goods_exp exp_name">[상품]상품명</span>
+                                    <span class="index_goods_exp exp_price">50,000<span class="won">원</span></span>
+                                    <span class="index_goods_exp exp_exp"> 상품 설명 간략한 설명 설명란</span>
+                                </p>
+                            </div>
                         </li>
                         <li>
                             <a href="#">
-                                <div class="index_goods_img_div"><img src="../images/" alt="Goods"></div>
+                                <div class="index_goods_img_div"><img src="https://via.placeholder.com/250x300" alt="Goods"></div>
                             </a>
+                            <div class="index_goods_exp_div">
+                                <p class="clear">                                    
+                                    <span class="index_goods_exp exp_name">[상품]상품명</span>
+                                    <span class="index_goods_exp exp_price">50,000<span class="won">원</span></span>
+                                    <span class="index_goods_exp exp_exp"> 상품 설명 간략한 설명 설명란</span>
+                                </p>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -178,46 +205,72 @@
                     <span class="index_moreBtn">더보기</span>
                 </div>
                 <div class="index_content_goodsList_div">
-                    <ul class="index_content_goodsList">
+                    <ul class="index_content_goodsList  clear">
                         <li>
                             <a href="#">
-                                <div class="index_goods_img_div"><img src="../images/" alt="Goods"></div>
+                                <div class="index_goods_img_div"><img src="https://via.placeholder.com/250x300" alt="Goods"></div>
                             </a>
+                            <div class="index_goods_exp_div">
+                                <p class="clear">                                    
+                                    <span class="index_goods_exp exp_name">[상품]상품명</span>
+                                    <span class="index_goods_exp exp_price">50,000<span class="won">원</span></span>
+                                    <span class="index_goods_exp exp_exp"> 상품 설명 간략한 설명 설명란</span>
+                                </p>
+                            </div>
                         </li>
                         <li>
                             <a href="#">
-                                <div class="index_goods_img_div"><img src="../images/" alt="Goods"></div>
+                                <div class="index_goods_img_div"><img src="https://via.placeholder.com/250x300" alt="Goods"></div>
                             </a>
+                            <div class="index_goods_exp_div">
+                                <p class="clear">                                    
+                                    <span class="index_goods_exp exp_name">[상품]상품명</span>
+                                    <span class="index_goods_exp exp_price">50,000<span class="won">원</span></span>
+                                    <span class="index_goods_exp exp_exp"> 상품 설명 간략한 설명 설명란</span>
+                                </p>
+                            </div>
                         </li>
                         <li>
                             <a href="#">
-                                <div class="index_goods_img_div"><img src="../images/" alt="Goods"></div>
+                                <div class="index_goods_img_div"><img src="https://via.placeholder.com/250x300" alt="Goods"></div>
                             </a>
+                            <div class="index_goods_exp_div">
+                                <p class="clear">                                    
+                                    <span class="index_goods_exp exp_name">[상품]상품명</span>
+                                    <span class="index_goods_exp exp_price">50,000<span class="won">원</span></span>
+                                    <span class="index_goods_exp exp_exp"> 상품 설명 간략한 설명 설명란</span>
+                                </p>
+                            </div>
                         </li>
                         <li>
                             <a href="#">
-                                <div class="index_goods_img_div"><img src="../images/" alt="Goods"></div>
+                                <div class="index_goods_img_div"><img src="https://via.placeholder.com/250x300" alt="Goods"></div>
                             </a>
+                            <div class="index_goods_exp_div">
+                                <p class="clear">                                    
+                                    <span class="index_goods_exp exp_name">[상품]상품명</span>
+                                    <span class="index_goods_exp exp_price">50,000<span class="won">원</span></span>
+                                    <span class="index_goods_exp exp_exp"> 상품 설명 간략한 설명 설명란</span>
+                                </p>
+                            </div>
                         </li>
                         <li>
                             <a href="#">
-                                <div class="index_goods_img_div"><img src="../images/" alt="Goods"></div>
+                                <div class="index_goods_img_div"><img src="https://via.placeholder.com/250x300" alt="Goods"></div>
                             </a>
+                            <div class="index_goods_exp_div">
+                                <p class="clear">                                    
+                                    <span class="index_goods_exp exp_name">[상품]상품명</span>
+                                    <span class="index_goods_exp exp_price">50,000<span class="won">원</span></span>
+                                    <span class="index_goods_exp exp_exp"> 상품 설명 간략한 설명 설명란</span>
+                                </p>
+                            </div>
                         </li>
                     </ul>
                 </div>
             </div>
         </div>
-        <footer>
-            <nav class="footer_nav">
-                <a href="#">깃허브</a>
-            </nav>
-            <p class="footer_copyright">
-                <span>제작자 : JongMinKim</span>
-                <span>이메일 : comeno3434@naver.com</span>
-                <span>Copyright 2022 JongMin. All Rights Reserved.</span>
-            </p>
-        </footer>
     </div>
+    <div id="footer"></div>
 </body>
 </html>
