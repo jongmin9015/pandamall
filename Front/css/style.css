@@ -234,6 +234,7 @@ header{
 
 /* index content 끝 */
 
+/* footer 시작 */
 footer{
     width: 100%;
     margin: 50px 0;
@@ -265,3 +266,12 @@ footer{
 .footer_copyright li{
     margin-top: 10px;
 }
+/* footer 끝 */
+
+/* signup 시작 */
+.signup_inner{
+    width: 1000px;
+    margin: 0 auto;
+}
+.signup_tit_div{}
+/* signup 끝 */

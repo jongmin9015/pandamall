@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/3926510854.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <title>Login</title>
+    <script>
+        $(document).ready(function(){
+            $("#header").load("include/header.html");
+            $("#footer").load("include/footer.html");
+        });
+    </script>
+</head>
+<body>
+    <div id="header"></div>
+    <div id="wrap">
+        <div class="signup_inner">
+            <div class="signup_tit_div">
+                <h1>회원가입</h1>
+            </div>
+            <div class="signup_content_div">                
+                <form method="post">
+                    <table class="signup_table">
+                        <tr class="signup_tr signup_tr_userid">                            
+                            <th>아이디</th>
+                            <td>
+                                <input type="text" name="userId" id="userId" placeholder="아이디를 적어주세요.">
+                                <button class="userId_check_btn">중복확인</button>
+                            </td>
+                        </tr>
+                        <tr class="signup_tr signup_tr_pwd">                            
+                            <th>비밀번호</th>
+                            <td>
+                                <input type="password" name="userpwd" id="userpwd" placeholder="비밀번호를 적어주세요.">
+                            </td>
+                        </tr>
+                        <tr class="signup_tr signup_tr_pwd signup_tr_pwd_check">                            
+                            <th>비밀번호 확인</th>
+                            <td>
+                                <input type="password" name="userpwd" id="userpwd" placeholder="비밀번호를 한번더 입력해 주세요.">
+                            </td>
+                        </tr>
+                        <tr class="signup_tr signup_tr_email">                            
+                            <th>이메일</th>
+                            <td>
+                                <input type="email" name="useremail" id="useremail">
+                            </td>
+                        </tr>
+                        <tr class="signup_tr signup_tr_phone">                            
+                            <th>휴대폰</th>
+                            <td>
+                                <input type="text" name="userephone" id="userephone">
+                                <button class="phone_check">인증번호 발송</button>
+                            </td>
+                        </tr>
+                        <tr class="signup_tr signup_tr_phone_check">                            
+                            <th>인증번호</th>
+                            <td>
+                                <input type="text" name="userephone_check" id="userephone_check">
+                                <button class="phone_check_ok">인증</button>
+                            </td>
+                        </tr>
+                        <tr class="signup_tr signup_tr_address">                            
+                            <th>주소</th>
+                            <td>
+                                <input type="text" name="address" id="address">
+                            </td>
+                        </tr>
+                        <tr class="signup_tr signup_btn_tr">
+                            <th colspan="2">                                
+                                <a href="#" class="pre_btn">이전</a>
+                                <input type="submit" class="signup_btn" value="회원가입">
+                            </th>                  
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="footer"></div>
+</body>
+</html>
